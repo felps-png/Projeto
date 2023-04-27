@@ -1,0 +1,99 @@
+/* Reset CSS */
+/* Estrutura Pagina */
+html{
+  background-color: #333;
+}
+
+* {
+    margin: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 4px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+
+  body{
+    background-color: #b1b1b1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no repeat;
+    min-height: 100vh;
+  }
+
+  nav{
+    background-color: #962323;
+    background-position: left center;
+    text-align: center;
+  }
+
+  nav ul{
+    display: inline-flex;
+    list-style: none;
+  }
+
+  nav ul li{
+    width: 120px;
+    margin: 20px;
+    padding: 10px;
+  }
+
+  li{
+      list-style-type: none;
+      padding: 0;
+      margin: left 10px;
+  }
+
+  nav ul li a{
+    text-decoration: none;
+    color: white;
+  }
+
+ .logotipo{
+    background-image: url("/Imagens/elevcomImagem.jpg");
+    background-position: left center;
+    width: 200px;
+    height: 120px;
+  }
+
+  .botao-estado {
+    display: flex;
+    justify-content: center; /* Cor de fundo do botão */
+    border: none; /* Remove a borda */
+    color: rgb(0, 0, 0); /* Cor do texto do botão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    text-align: center; /* Centraliza o texto no botão */
+    text-decoration: none; /* Remove o sublinhado do texto */
+    display: inline; /* Exibe o botão como bloco */
+    font-size: 16px; /* Tamanho da fonte do texto */
+    font-family: Arial;
+    margin: 10px 10px; /* Espaçamento externo do botão */
+    cursor: pointer; /* Cursor ao passar o mouse */
+    border-radius: 9px; /* Borda arredondada */
+  }
+
+  .botao-cliente {
+    display: flex;
+    justify-content: center;
+  /* Cor de fundo do botão */
+    border: none; /* Remove a borda */
+    color: rgb(0, 0, 0); /* Cor do texto do botão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    text-align: center; /* Centraliza o texto no botão */
+    text-decoration: none; /* Remove o sublinhado do texto */
+    display: inline; /* Exibe o botão como bloco */
+    font-size: 16px; /* Tamanho da fonte do texto */
+    font-family: Arial;
+    margin: 10px 10px; /* Espaçamento externo do botão */
+    cursor: pointer; /* Cursor ao passar o mouse */
+    border-radius: 9px; /* Borda arredondada */
+  }
+
+  button {
+    background-color: #ffffff;
+  }
+
+  
+  
+  
+ 

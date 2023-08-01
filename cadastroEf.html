@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <title>Cadastro de Entre Furos</title>
+</head>
+
+<body>
+    <header>
+        <div id="header-placeholder"></div>
+    </header>
+    <div class="centro">
+        <main class="menu">
+            <div style="margin: 10px; border-style:solid; border-color: rgba(168, 168, 168, 0.349); margin-bottom: 15px;"
+                class="bordaEf">
+                <h1
+                    style="font-family: Arial;  font-weight: bold; color: #d92830; display: flex; justify-content: center; margin-bottom: 10px;">
+                    Cadastro de Entre Furos</h1>
+                <h4 style="margin-bottom: 30px; display: flex; justify-content: center; margin-left: 30px;">Esta página
+                    é totalmente destinada a cadastro de entre furos que não
+                    temos
+                    presente em nosso banco de dados! <br>
+                    Ao cadastrar um novo entre furos, por gentileza, se atentar as informações inseridas!</h4>
+                <form class="row g-3" style="display: flex; justify-content: center;" id="formEf">
+                    <div style="width: 200px;">
+                        <label for="entreFuros" class="form-label fw-bold">Entre furos:</label>
+                        <input type="text" id="entreFuros" class="form-control" placeholder="Digite o Entre Furos..."
+                            aria-label="entreFuros" required>
+                    </div>
+                    <div style="width: 225px;">
+                        <label for="produto" class="form-label fw-bold">Produto:</label>
+                        <select id="produto" class="form-select" required>
+                            <option selected>Escolha um produto...</option>
+                            <option>PAVIMENTO</option>
+                            <option>CABINA</option>
+                            <option>DISPLAY</option>
+                        </select>
+                    </div>
+                    <div style="width: 255px;">
+                        <label for="parafuso" class="form-label fw-bold">Parafuso:</label>
+                        <select id="parafuso" class="form-select" required>
+                            <option selected>Escolha um parafuso...</option>
+                            <option>3/16</option>
+                            <option>M5</option>
+                            <option>M4</option>
+                            <option>PINO M4 x 20</option>
+                            <option>PINO M5 x 50</option>
+                            <option>PINO M3 x 10</option>
+                            <option>PINO M3 x 15</option>
+                            <option>PINO M3 x 25</option>
+                            <option>PINO M3 x 35</option>
+                            <option>PINO M4 x 30</option>
+                            <option>PINO M4 x 70</option>
+                            <option>ROSCA 4.5</option>
+                        </select>
+                    </div>
+                    <div class="col-md-5">
+                        <label for="botoeira" class="form-label fw-bold">Medidas:</label>
+                        <input type="text" id="botoeira" class="form-control" placeholder="Digite as medidas..."
+                            aria-label="botoeira" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="fabricante" class="form-label  fw-bold">Fabricante:</label>
+                        <input type="text" id="fabricante" class="form-control"
+                            placeholder="Digite o nome do fabricante..." aria-label="botoeira"
+            required>
+                    </div>
+                    <div style="width: 700px;">
+                        <label for="observacoesEf" class="form-label  fw-bold">Observações:</label>
+                        <textarea id="observacoesEf" class="form-control" aria-label="observacoesEf" style="height: 100px;"
+                            placeholder="Digite aqui as observações que não foram inseridas acima..."></textarea>
+                    </div>
+                  
+                    <div style="border:dashed; border-color: rgba(0, 0, 0, 0.151); width: 685px; border-radius: 2px">
+                        <label for="imagem1" class="form-label fw-bold">Imagem [1/5]</label>
+                        <div class="input-group" style="margin-bottom: 20px;">
+                            <span class="input-group-text" style="height: 40px;">Exemplo: fotoPav_1.jpeg</span>
+                            <input type="text" class="form-control" id="imagem1"
+                                aria-describedby="basic-addon3 basic-addon4"
+                                placeholder="Insira o nome do arquivo da imagem...">
+                        </div>
+                    </div>
+                    <div style="border:dashed; border-color: rgba(0, 0, 0, 0.151); width: 685px; border-radius: 2px">
+                        <label for="imagem2" class="form-label fw-bold">Imagem [2/5]</label>
+                        <div class="input-group" style="margin-bottom: 20px;">
+                            <span class="input-group-text" style="height: 40px;">Exemplo: fotoPav_2.jpeg</span>
+                            <input type="text" class="form-control" id="imagem2"
+                                aria-describedby="basic-addon3 basic-addon4"
+                                placeholder="Insira o nome do arquivo da imagem...">
+                        </div>
+                    </div>
+                    <div style="border:dashed; border-color: rgba(0, 0, 0, 0.151); width: 685px; border-radius: 2px">
+                        <label for="imagem3" class="form-label fw-bold">Imagem [3/5]</label>
+                        <div class="input-group" style="margin-bottom: 20px;">
+                            <span class="input-group-text" style="height: 40px;">Exemplo: fotoPav_3.jpeg</span>
+                            <input type="text" class="form-control" id="imagem3"
+                                aria-describedby="basic-addon3 basic-addon4"
+                                placeholder="Insira o nome do arquivo da imagem...">
+                        </div>
+                    </div>
+                    <div style="border:dashed; border-color: rgba(0, 0, 0, 0.151); width: 685px; border-radius: 2px">
+                        <label for="imagem4" class="form-label fw-bold">Imagem [4/5]</label>
+                        <div class="input-group" style="margin-bottom: 20px;">
+                            <span class="input-group-text" style="height: 40px;">Exemplo: fotoPav_4.jpeg</span>
+                            <input type="text" class="form-control" id="imagem4"
+                                aria-describedby="basic-addon3 basic-addon4"
+                                placeholder="Insira o nome do arquivo da imagem...">
+                        </div>
+                    </div>
+                    <div style="border:dashed; border-color: rgba(0, 0, 0, 0.151); width: 685px; border-radius: 2px">
+                        <label for="imagem5" class="form-label fw-bold">Imagem [5/5]</label>
+                        <div class="input-group" style="margin-bottom: 20px;">
+                            <span class="input-group-text" style="height: 40px;">Exemplo: fotoPav_5.jpeg</span>
+                            <input type="text" class="form-control" id="imagem5"
+                                aria-describedby="basic-addon3 basic-addon4"
+                                placeholder="Insira o nome do arquivo da imagem...">
+                        </div>
+                    </div>
+                    <div style="display: flex; justify-content: center;">
+                        <button type="submit" class="btn btn-danger fw-bold w-25">Cadastrar</button>
+                        <button type="reset" style="margin: 10px;" class="btn btn-danger fw-bold">Limpar</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+    <button class="voltarInicio" onclick="voltarInicio()">Voltar à pesquisa</button>
+
+    <footer>
+        <!-- Aqui você pode adicionar informações de rodapé, links de redes sociais, etc. -->
+        <p>&copy; 2023 Elevcom by Felipe Pereira. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

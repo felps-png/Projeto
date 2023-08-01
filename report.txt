@@ -1,0 +1,555 @@
+<!-- BOTÃO DE PESQUISA DO ESTADO E EVENTO ENTER
+    <input type="text" id="txtPesquisar-Estado" placeholder="Digite o UF do cliente..."
+      onkeydown="if(event.keyCode==13) pesquisarEstado()" classe="caixaTexto" autofocus>
+    <button onclick="pesquisarEstado()" class="caixaBotao">Pesquisar</button>-->
+    
+    -------------------------------------------------------------------------------------------------
+    /*function pesquisarEstado() {
+  const searchTerm = document.getElementById("txtPesquisar-Estado").value.toUpperCase();
+  // lista de estados do Brasil
+  const estados = ['AC', 'AL', 'AP', 'AM', 'BA', 'CE', 'DF', 'ES',
+    'GO', 'MA', 'MT', 'MS', 'MG', 'PA', 'PB', 'PR', 'PE', 'PI', 'RJ', 'RN', 'RS', 'RO', 'RR', 'SC', 'SP', 'SE', 'TO'];
+  // objeto mapeando cada estado para o arquivo PHP correspondente
+  const estadoToPhp = {
+    'SP': 'api.php',
+    'RJ': 'clientesEstados/clientesRJ.html',
+    'SC': 'clientesEstados/clientesSC.html',
+    // adicione mais estados e arquivos PHP aqui
+  };
+
+  for (let i = 0; i < estados.length; i++) {
+    const estado = estados[i];
+    if (estado.startsWith(searchTerm)) {
+      const phpFile = estadoToPhp[estado];
+      if (phpFile) {
+        // faz uma requisição AJAX para o arquivo PHP correspondente
+        const xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+            // exibe os resultados da pesquisa na div de resultado
+            document.getElementById("resultadoPesquisa").innerHTML = this.responseText;
+          }
+        };
+        xhttp.open("GET", phpFile, true);
+        xhttp.send();
+        return;
+      }
+    }
+  }
+
+  alert('Nenhum cliente encontrado para o UF digitado.');
+}
+
+fetch ('api.php')
+  .then(response => response.json())
+  .then(data => {
+    // Exibe os dados na página HTML
+    const list = document.querySelector('#lista-de-dados');
+    data.forEach(item => {
+      const li = document.createElement('li');
+      li.textContent = item.nome;
+      list.appendChild(li);
+    });
+  });*/
+
+NAO UTILIZADO HTML!
+   <!-- <div class = "imagemElevcom" alt="Fabrica Elevcom Terra Preta" title="Fotografia da Fabrica"></div>-->
+        <div class="separadorTitulo"></div>
+        <!-- Aqui você pode adicionar o conteúdo principal da página -->
+        <h1 class="tituloCliente">ELEVCOM - SP - 613</h1>
+        <br>
+        <h3 style="color: rgb(255, 0, 0); font-weight: bold;">Padrão de Parafusos: </h3>
+        <a class="texto-estilizado">Na totem, sempre utilizar parafusos M5 ou 3/16. (Nunca utilizar M4 pois é pequeno e fino)</a> <br>
+        <a class="texto-estilizado">Parafusos 4.5 nunca colocar nem no totem, nem na nossa caixa, pois não temos presilhas.</a> <br>
+        <br>
+        <h3 style="color: rgb(255, 0, 0); font-weight: bold;">Padrão de Caixas</h3>
+        <h4>Cabina</h4>
+        <a class="texto-estilizado">160 x 380 x ( existe 3 profundidades ) 60 - 75 - 78. E entre furos com 480mm</a><br>
+        <a class="texto-estilizado">   ( 4 FURAÇÕES, O ESPELHO FICA 20mm MAIOR TANTO NA LARGURA x ALTURA )</a>
+            <div class="separadorTexto"></div>
+        <a class="texto-estilizado">180 x 580 x ( existe 3 profundidades ) 60 - 75 - 78. E entre furos com 1080mm</a> 
+            <br>  <a class="texto-estilizado">( 6 FURAÇÕES, O ESPELHO FICA20mm MAIOR TANTO NA LARGURA x ALTURA )</a>
+            <div class="separadorTexto"></div>
+        <a class="texto-estilizado"> 180 x 1180 x ( existe 3 profundidades ) 60 - 75 - 78. E entre furos com 1580mm<br>
+            <a class="texto-estilizado">( 8 FURAÇÕES, O ESPELHO FICA 20mm MAIOR TANTO NA LARGURA x ALTURA )</a>
+            <div class="separadorTexto"></div>
+        <h4>Pavimento</h4>
+        <a class="texto-estilizado">73 x 220 x 60 (Medida Padrão Elevcom)</a> <br>
+        <a class="texto-estilizado">73 x 250 x 60 (Medida Padrão Elevcom)</a>
+        <br> <br>
+        <h3 style="color: rgb(255, 0, 0); font-weight: bold;">Padrão de Vidros:</h3>
+        <div class="container">
+            <div class="item">
+                <h4>Pavimento Inox Glass</h4>
+                <a class="texto-estilizado">70 x 135</a> <br>
+                <a>75 x 135</a> <br>
+                <a>80 x 135</a> <br>
+                <a>90 x 135</a> <br>
+                <a>100 x 135</a><br>
+            </div>
+            <div class="item">
+                <h4>Cabina Inox Glass</h4>
+                <a>190 x 300</a> <br>
+                <a>200 x 300</a> <br>
+                <a>210 x 300</a> <br>
+            </div>
+            <div class="item">
+                <h4>Cabina Inox Glass</h4>
+                <a>190 x 300</a> <br>
+                <a>200 x 300</a> <br>
+                <a>210 x 300</a> <br>
+            </div>
+            <div class="item">
+                <h4>Display de Batente Inox Glass</h4>
+                <a>300 x 120</a> <br>
+                <a>300 x 110</a> <br>
+                <a>300 x 100</a> <br>
+                <a>300 x 90</a> <br>
+                <a>300 x 80</a><br>
+            </div>
+            <div class="item">
+                <h4>Totem Inox Glass</h4>
+                <a>145 x 450</a> <br>
+                <a>165 x 450</a> <br>
+                <a>195 x 450</a><br>
+            </div>
+            <div class="item">
+                <h4>Semi-Totem Inox Glass</h4>
+                <a>145 x 300</a> <br>
+                <a>165 x 300</a> <br>
+                <a>195 x 300</a><br>
+            </div>
+            </div>
+            <br>
+            <h3 style="color: rgb(255, 0, 0); font-weight: bold;">Padrão de Distribuição (Botões):</h3>
+            <a class="texto-estilizado"></a>
+    </main>
+
+
+
+    USAR DEPOIS!
+    // Função para fazer a requisição dos dados do servidor
+function getData(url) {
+  return fetch(url)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`Erro ao carregar os dados: ${response.status} ${response.statusText}`);
+      }
+      return response.json();
+    })
+    .catch(error => {
+      console.error('Erro de conexão:', error);
+    });
+}
+
+// Função para exibir as informações do cliente no HTML
+function exibirInformacoesCliente(data) {
+  const informacoesclienteDiv = document.getElementById('informacoescliente');
+  informacoesclienteDiv.innerHTML = '';
+
+  data.forEach(cliente => {
+    const clienteElement = document.createElement('div');
+    clienteElement.innerHTML = `
+      <h2>${cliente.nome}</h2>
+      <p>Código: ${cliente.codigo}</p>
+      <p>Estado: ${cliente.estado}</p>
+      <p>UF: ${cliente.uf}</p>
+      <p>Parafuso: ${cliente.parafuso}</p>
+      <p>Visor: ${cliente.visor}</p>
+      <p>Medidas: ${cliente.medidas}</p>
+      <p>Logotipo: ${cliente.logotipo}</p>
+      <p>Produto: ${cliente.produto}</p>
+    `;
+
+    informacoesclienteDiv.appendChild(clienteElement);
+  });
+}
+
+// Função para exibir as regras dos fabricantes no HTML
+function exibirRegrasFabricantes(data) {
+  // Implemente essa função de acordo com a estrutura das regras dos fabricantes
+  // Similar à função exibirInformacoesCliente, mas para as regras dos fabricantes
+}
+
+// Função principal que será executada ao carregar a página
+function main() {
+  // Fazer a requisição dos dados do cliente
+  getData('/informacoescliente')
+    .then(data => {
+      // Exibir as informações do cliente no HTML
+      exibirInformacoesCliente(data);
+    });
+
+  // Fazer a requisição das regras dos fabricantes
+  getData('/regrasfabricantes')
+    .then(data => {
+      // Exibir as regras dos fabricantes no HTML
+      exibirRegrasFabricantes(data);
+    });
+}
+
+// Chamar a função principal ao carregar a página
+window.onload = main;
+
+
+
+DATA CODIGO ALTERADO - 15/06**************************************
+const mysql = require('mysql');
+const express = require('express');
+
+const app = express();
+const port = 5500;
+
+// Configurar as informações de conexão com o banco de dados
+const connection = mysql.createConnection({
+  host: '127.0.0.1',
+  port: '3306',
+  user: 'root',
+  password: 'elevcom@4815',
+  database: 'clienteinformativo',
+});
+
+// Middleware para analisar o corpo da requisição
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+// Rota para buscar os dados da tabela "informacoescliente"
+app.get('/informacoescliente', (req, res) => {
+  // Conectar ao banco de dados
+  connection.connect();
+
+  // Executar uma consulta na tabela "informacoescliente"
+  connection.query('SELECT * FROM informacoescliente', (error, results, fields) => {
+    if (error) {
+      console.error('Erro ao executar consulta na tabela "informacoescliente": ', error);
+      res.status(500).json({ error: 'Erro ao buscar os dados.' });
+    } else {
+      res.json(results);
+    }
+  });
+
+  // Encerrar a conexão com o banco de dados
+  connection.end();
+});
+
+// Rota para buscar os dados da tabela "regrasfabricantes"
+app.get('/regrasfabricantes', (req, res) => {
+  // Conectar ao banco de dados
+  connection.connect();
+
+  // Executar uma consulta na tabela "regrasfabricantes"
+  connection.query('SELECT * FROM regrasfabricantes', (error, results, fields) => {
+    if (error) {
+      console.error('Erro ao executar consulta na tabela "regrasfabricantes": ', error);
+      res.status(500).json({ error: 'Erro ao buscar os dados.' });
+    } else {
+      res.json(results);
+    }
+  });
+
+  // Encerrar a conexão com o banco de dados
+  connection.end();
+});
+
+// Rota para cadastrar um cliente
+app.post('/cadastrar', (req, res) => {
+  const { codigo, nome, estado, uf, parafuso, visor, medidas, logotipo, produto } = req.body;
+
+  // Faça a inserção dos dados no banco de dados
+  connection.query(
+    'INSERT INTO informacoescliente (codigo, nome, estado, uf, parafuso, visor, medidas, logotipo, produto) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)',
+    [codigo, nome, estado, uf, parafuso, visor, medidas, logotipo, produto],
+    (error, results) => {
+      if (error) {
+        console.error('Erro ao cadastrar:', error);
+        res.status(500).json({ error: 'Erro ao cadastrar.' });
+      } else {
+        res.json({ message: 'Cadastro realizado com sucesso.' });
+      }
+    }
+  );
+});
+
+// Iniciar o servidor
+app.listen(port, () => {
+  console.log(`Servidor rodando em http://127.0.0.1:${port}`);
+});
+
+------------------------------------------------------------------------------
+// Rota para cadastrar um cliente
+app.post('http://127.0.0.1:5500/cadastrar', (req, res) => {
+  const { codigo, nome, estado, uf, parafuso, visor, medidas, logotipo, produto } = req.body;
+
+  // Faça a inserção dos dados no banco de dados
+  connection.query(
+    'INSERT INTO informacoescliente (codigo, nome, estado, uf, parafuso, visor, medidas, logotipo, produto) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)',
+    [codigo, nome, estado, uf, parafuso, visor, medidas, logotipo, produto],
+    (error, results) => {
+      if (error) {
+        console.error('Erro ao cadastrar:', error);
+        res.status(500).json({ error: 'Erro ao cadastrar.' });
+      } else {
+        res.json({ message: 'Cadastro realizado com sucesso.' });
+      }
+    }
+  );
+});
+
+// Iniciar o servidor
+app.listen(port, () => {
+  console.log(`Servidor rodando em http://127.0.0.1:${port}`);
+});
+
+
+
+
+
+
+---
+/* const codigoTexto = resultados.codigo;
+  const nomeTexto = resultados.nome;
+  const estadoTexto = resultados.estado;
+  const atendenteTexto = resultados.atendente;
+  const contatoTexto = resultados.contato;*/
+
+   //dadosCliente.innerHTML += `<p>Código: ${codigoSpan} | Cliente: ${nomeTexto}</p>`
+    //dadosCliente.innerHTML += `<p>Estado: ${estadoTexto} | Atendente: ${atendenteTexto} | Contato: ${contatoTexto}</p>`
+    
+-------------------------------------------------------
+PEGAR DO BANCO DE DADOS E RETORNAR EM HTML SPAN 
+// Exibir os elementos separados fora da tabela
+    /*const codigoSpan = document.getElementById('colunaCodigo');
+    codigoSpan.style.color = '#d92830';
+    codigoSpan.style.backgroundColor = 'black'
+    const nomeSpan = document.getElementById('colunaNome');
+    nomeSpan.style.color = '#d92830';
+    const estadoSpan = document.getElementById('colunaEstado');
+    estadoSpan.style.color = '#d92830';
+    const atendenteSpan = document.getElementById('colunaAtendente');
+    atendenteSpan.style.color = '#d92830';
+    const contatoSpan = document.getElementById('colunaContato');
+    contatoSpan.style.color = '#d92830';*/
+
+    <div style="text-align: left;">
+         <!-- <a class="fs-3">Código:</a>
+          <a id="colunaCodigo" class="fs-3" style="font-weight: bold; margin-right: 30px;"></a>
+          <a class=" fs-3" style="margin-right: 10px;">Nome:</a>
+          <span id="colunaNome" class="fs-3" style="font-weight: bold; margin-right: 30px;"></span>
+          <a class="fs-3" style="margin-right: 10px;">Estado:</a>
+          <span id="colunaEstado" class="fs-3" style="font-weight: bold; margin-right: 30px;"></span>
+          <br>
+          <a class="fs-3">Atendente:</a>
+          <span id="colunaAtendente" class="fs-3" style="font-weight: bold; margin-right: 30px;"></span>
+          <a class="fs-3">Contato do Cliente:</a>
+          <span id="colunaContato" class="fs-3" style="font-weight: bold; margin-right: 30px;"></span>-->
+        </div>
+        ---------------------------------------------------------------
+
+         endereçosPav = resultado.imagem
+        imagensPav = endereçosPav.split(",");
+        pav1 = imagensPav[0];
+        pav2 = imagensPav[1];
+        if (imagensPav.length === 0) {
+          console.log('Não foi possivel inserir a imagem!', error)
+        } else if (imagensPav.length == 1) {
+          console.log('Imagem recebida com sucesso!')
+          const img = window.document.createElement('img')
+
+          img.src = pav1
+          img.style.width = '50%';
+          img.style.height = '50%';
+          const inserirImagem = window.document.getElementById('inserirImagem')
+          inserirImagem.appendChild(img);
+        } if ()
+      
+
+      --------------------------------------------------------------------
+       /*const img = document.createElement('img');
+        const caminhoImagem = resultado.imagem; // Caminho da imagem vindo do banco de dados
+        const pastaImagem = 'N:\\ARQUIVOS CAD\\- INFORMACOES GERAIS'; // Pasta base das imagens
+        
+        const enderecoServidor = `${pastaImagem}\\${caminhoImagem}`;
+        console.log(enderecoServidor);
+        
+        if (!caminhoImagem) {
+          console.log('Não foi possível inserir a imagem!');
+        } else {
+          console.log('Imagem recebida com sucesso!');
+          img.src = enderecoServidor;
+          img.style.width = 'auto';
+          img.style.height = 'auto';
+          const inserirImagem = document.getElementById('inserirImagem');
+          inserirImagem.appendChild(img);
+        }*/
+
+-------------------------------------------------------------------------
+
+function adicionarImagem(resultado) {
+  const caminhoImagem = resultado.imagem; // Caminho da imagem vindo do banco de dados
+  if (!caminhoImagem || caminhoImagem === 'null') {
+    console.log('Caminho da imagem não encontrado.');
+    return;
+  }
+  const pastaImagem = `http://localhost:5500/imagensPavimento`; // Pasta base das imagens
+  const enderecoServidor = `${pastaImagem}\\${caminhoImagem}`;
+  console.log('Endereço da imagem:', enderecoServidor);
+
+  if (!enderecoServidor) {
+    console.log('Não foi possível inserir a imagem!');
+  } else {
+    console.log('Imagem recebida com sucesso!');
+    const img = document.createElement('img');
+    img.src = enderecoServidor;
+    img.style.display = 'flex'
+    img.style.justifyContent = 'center'
+    img.style.width = '30%'
+    img.style.height = '30%'
+    const imagemPav = window.document.getElementById('imagemPav');
+    imagemPav.appendChild(img);
+  }
+  const botaoVoltar = window.document.getElementById('botaoGaleriaVoltar')
+  const botaoAvancar = window.document.getElementById('botaoGaleriaAvancar')
+  // const imagemPav = window.document.getElementById('imagemPav')
+
+  if (imagemPav) {
+    console.log('Galeria criada com sucesso!')
+    botaoVoltar.style.display = 'block'; // Exibir o botão Voltar
+    botaoAvancar.style.display = 'block'; // Exibir o botão Avançar
+  } else {
+    console.log('[ERRO] Esta pavimento não contém fotos na base!')
+  }
+}
+
+
+function galeriaImagem(resultado) {
+  const resultadoImagem = resultado.imagem;
+  const criarAmbiente = window.document.getElementById('criarAmbiente')
+  if (!resultadoImagem) {
+    console.log('A galeria de imagens não obteve sucesso em seu início!')
+  } else {
+    console.log('A galeria de imagens obteve sucesso em seu início!')
+    criarAmbiente.style.borderStyle = 'solid';
+    criarAmbiente.style.borderColor = 'silver';
+    criarAmbiente.style.display = 'flex';
+  }
+
+}
+
+
+-------------------------------------------------------------------------
+
+toppper!
+
+/*  LUPA TOPPERSON 
+
+  const imagem1 = document.getElementById('imagem1');
+
+  imagem1.addEventListener('mouseover', () => {
+    // Ação que será executada quando o mouse passar sobre o elemento
+    console.log('O mouse passou sobre o elemento!');
+
+    console.log('Deu muito certo meu amigo!')
+    const carrosselImagens1 = document.getElementById('carrosselImagens1');
+    carrosselImagens1.classList.add('lupa');
+
+    const carrosselImagens2 = document.getElementById('carrosselImagens2');
+    carrosselImagens2.classList.add('lupa')
+
+    const carrosselImagens3 = document.getElementById('carrosselImagens3');
+    carrosselImagens3.classList.add('lupa')
+  });
+
+
+// Função para controlar a lupa
+function lupaZoom(event) {
+  const imagensLupa = document.getElementById('imagem1');
+  const magnifier = document.querySelector('.lupa');
+
+  if (imagensLupa) {
+
+    // Posição do mouse sobre as imagens
+    const limites = imagensLupa.getBoundingClientRect();
+    const mouseX = event.clientX - limites.left;
+    const mouseY = event.clientY - limites.top;
+
+    // Calcular posição de Lupa nas imagens
+    const magnifierX = (mouseX / imagensLupa.clientWidth) * magnifier.offsetWidth;
+    const magnifierY = (mouseY / imagensLupa.clientHeight) * magnifier.offsetHeight;
+
+    // Estabelecer a posição da lupa e a parte com zoom na imagem
+    magnifier.style.left = `${mouseX - magnifier.offsetWidth / 2}px`;
+    magnifier.style.top = `${mouseY - magnifier.offsetHeight / 2}px`;
+    magnifier.style.backgroundPosition = `-${magnifierX}px -${magnifierY}px`;
+  }
+
+}
+// Adicionar o evento "mousemove" a todas as imagens selecionadas
+const imagensLupa = document.getElementById('imagem1');
+imagensLupa.addEventListener('mousemove', lupaZoom);
+*/
+----------------------------------------------------------------------
+
+// FAZER TRABELAS clientes
+
+  const corpoTabela = document.getElementById('corpo-tabela');
+  corpoTabela.innerHTML = ''; // Limpa o conteúdo anterior
+
+  if (resultados.length === 0) {
+    // Caso não haja resultados
+    const linhaVazia = document.createElement('tr');
+    const colunaMensagem = document.createElement('td');
+    colunaMensagem.textContent = 'Nenhum resultado encontrado.';
+    colunaMensagem.setAttribute('colspan', '5');
+    linhaVazia.appendChild(colunaMensagem);
+    corpoTabela.appendChild(linhaVazia);
+  } else {
+    // Caso haja resultados
+    // Dados padrões do Cliente
+    let dadosCliente = window.document.getElementById('dadosCliente');
+    dadosCliente.innerHTML = '';
+    const codigoTexto = resultados[0].codigo;
+    const nomeTexto = resultados[0].nome;
+    const estadoTexto = resultados[0].estado;
+    const atendenteTexto = resultados[0].atendente;
+    const contatoTexto = resultados[0].contato;
+    dadosCliente.innerHTML += `<p>Código: ${codigoTexto}  |  Cliente: ${nomeTexto}</p>`
+    dadosCliente.innerHTML += `<p>Estado: ${estadoTexto}  |  Atendente: ${atendenteTexto}  |  Contato: ${contatoTexto}</p>`
+
+    dadosCliente.style.fontSize = '18px';
+    dadosCliente.style.fontFamily = 'Arial, sans-serif';
+    dadosCliente.style.fontWeight = 'bold';
+    dadosCliente.style.textAlign = 'left';
+
+    resultados.forEach(resultado => {
+      const linha = document.createElement('tr');
+
+      const colunaParafuso = document.createElement('td');
+      colunaParafuso.textContent = resultado.parafuso;
+      linha.appendChild(colunaParafuso);
+
+      const colunaVisor = document.createElement('td');
+      colunaVisor.textContent = resultado.visor;
+      linha.appendChild(colunaVisor);
+
+      const colunaMedidas = document.createElement('td');
+      colunaMedidas.textContent = resultado.medidas;
+      linha.appendChild(colunaMedidas);
+
+      const colunaLogotipo = document.createElement('td');
+      colunaLogotipo.textContent = resultado.logotipo;
+      linha.appendChild(colunaLogotipo);
+
+      const colunaProduto = document.createElement('td');
+      colunaProduto.textContent = resultado.produto;
+      colunaProduto.style.cursor = 'pointer';
+      colunaProduto.style.backgroundColor = '#f35858';
+      colunaProduto.addEventListener('click', () => {
+        const observacoes = resultado.observacoes;
+        const textareaObservacoes = document.getElementById('observacoes');
+        textareaObservacoes.value = observacoes;
+      });
+      linha.appendChild(colunaProduto);
+
+      corpoTabela.appendChild(linha);
+    });
+  }

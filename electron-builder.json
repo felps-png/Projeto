@@ -1,0 +1,26 @@
+{
+  "appId": "com.elevcom.projetoconsulta",
+  "productName": "Projeto Consulta",
+  "directories": {
+    "output": "dist"
+  },
+  "files": [
+    "dist/**/*",
+    "node_modules/**/*",
+    "server.js",
+    "script.js",
+    "estilo.css",
+    "imagens/",
+    "index.html",
+    "cadastro.html"
+  ],
+  "win": {
+    "target": "nsis"
+  },
+  "mac": {
+    "target": "dmg"
+  },
+  "linux": {
+    "target": "AppImage"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "projeto_consulta",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "pkg server.js --output projetoConsulta --target node14-win-x64",
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "express-static": "^1.2.6",
+    "json": "^11.0.0",
+    "mysql": "^2.18.1",
+    "node-fetch": "^3.3.1"
+  },
+  "devDependencies": {
+    "builder": "^5.0.0",
+    "electron": "^25.2.0",
+    "electron-builder": "^24.4.0"
+  }
+}

@@ -1,0 +1,372 @@
+/* Reset CSS */
+/* Estrutura Pagina */
+
+html {
+  background-color: #000000;
+}
+
+.menu{
+  margin: 27px; 
+  border-style:solid; 
+  border-color: rgb(168, 168, 168);
+  border-width: 2px
+}
+
+* {
+  margin: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 4px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #969696;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 30px;
+  color: #000000;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.logotipo {
+  display: inline-block;
+  background-image: url("Imagens/elevcomImagem.png");
+  background-size: cover;
+  background-position: center;
+  width: 150px;
+  height: 120px;
+}
+
+
+nav {
+  background-color: #000000;
+  background-position: center;
+  text-align: center;
+}
+
+
+nav ul:not(.dropdown-menu) {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: -4px;
+  width: auto;
+  height: 65px;
+  background-color: #d92830;
+  text-decoration-color: #ffffff;
+}
+
+nav ul li:not(.dropdown-menu) {
+  width: 130px;
+  margin: 5px;
+  padding: 5px;
+  padding-top: 10px;
+  font-weight: bold;
+  /*background-color: #d92830;*/
+ 
+}
+
+ul{
+  width: 100%;
+  padding-left: -100px;
+}
+
+
+nav ul li {
+  color: rgb(0, 0, 0);
+}
+
+a:not(dropdown-item) {
+  text-decoration:dashed;
+  font-weight: normal;
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-size: 17px;
+  color: #ffffff;
+  margin: 15px;
+}
+
+.dropdown-item{
+  padding: 0px  ;
+}
+
+::placeholder {
+  font-style: italic;
+}
+
+
+.botao-estado {
+  border: none;
+  /* Remove a borda */
+  color: rgb(0, 0, 0);
+  /* Cor do texto do botão */
+  padding: 10px 20px;
+  /* Espaçamento interno do botão */
+  text-align: center;
+  /* Centraliza o texto no botão */
+  text-decoration: none;
+  /* Remove o sublinhado do texto */
+  display: inline;
+  /* Exibe o botão como bloco */
+  font-size: 16px;
+  /* Tamanho da fonte do texto */
+  font-family: Arial;
+  font-weight: bold;
+  margin: 10px 10px;
+  /* Espaçamento externo do botão */
+  cursor: pointer;
+  /* Cursor ao passar o mouse */
+  border-radius: 9px;
+  /* Borda arredondada */
+}
+
+.botaoCliente-branco {
+  border: none;
+  /* Remove a borda */
+  color: rgb(0, 0, 0);
+  /* Cor do texto do botão */
+  padding: 5px 10px;
+  /* Espaçamento interno do botão */
+  text-align: center;
+  /* Centraliza o texto no botão */
+  text-decoration: none;
+  /* Remove o sublinhado do texto */
+  display: inline-block;
+  /* Exibe o botão como bloco */
+  font-size: 16px;
+  /* Tamanho da fonte do texto */
+  font-family: Arial;
+  font-weight: bold;
+  margin: 10px 10px;
+  /* Espaçamento externo do botão */
+  cursor: pointer;
+  /* Cursor ao passar o mouse */
+  border-radius: 9px;
+  /* Borda arredondada */
+}
+
+button.branco {
+  background-color: #ffffff;
+  border: none;
+  /* Remove a borda */
+  color: rgb(0, 0, 0);
+  /* Cor do texto do botão */
+  padding: 5px 10px;
+  /* Espaçamento interno do botão */
+  text-align: center;
+  /* Centraliza o texto no botão */
+  text-decoration: none;
+  /* Remove o sublinhado do texto */
+  display: inline-block;
+  /* Exibe o botão como bloco */
+  font-size: 16px;
+  /* Tamanho da fonte do texto */
+  font-family: Arial;
+  font-weight: bold;
+  margin: 10px 10px;
+  /* Espaçamento externo do botão */
+  cursor: pointer;
+  /* Cursor ao passar o mouse */
+  border-radius: 9px;
+  /* Borda arredondada */
+}
+
+button.cinza {
+  background-color: #6d6d6d;
+  border: none;
+  /* Remove a borda */
+  color: rgb(0, 0, 0);
+  /* Cor do texto do botão */
+  padding: 5px 10px;
+  /* Espaçamento interno do botão */
+  text-align: center;
+  /* Centraliza o texto no botão */
+  text-decoration: none;
+  /* Remove o sublinhado do texto */
+  display: inline-block;
+  /* Exibe o botão como bloco */
+  font-size: 16px;
+  /* Tamanho da fonte do texto */
+  font-family: Arial;
+  font-weight: bold;
+  margin: 10px 10px;
+  /* Espaçamento externo do botão */
+  cursor: pointer;
+  /* Cursor ao passar o mouse */
+  border-radius: 9px;
+  /* Borda arredondada */
+}
+
+
+button:hover {
+  background: rgb(100, 100, 100);
+  cursor: pointer;
+  transform: translateX(-3px)
+}
+
+
+.voltarInicio {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #c52525;
+  color: #ffffff;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  transform: translateX(30px)
+}
+
+.voltarInicio:hover {
+  background-color: #751212;
+  transform: translateX(28px)
+}
+
+
+
+
+/*PAGINA CLIENTE*/
+
+.tituloCliente {
+  text-align: left;
+  color: #000000;
+  /* Cor do texto */
+  font-size: 45px;
+  /* Tamanho da fonte */
+  font-weight: bold;
+  /* Negrito */
+  text-transform: uppercase;
+  /* Texto em letras maiúsculas */
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  /* Sombra do texto */
+  letter-spacing: 2px;
+  /* Espaçamento entre letras */
+  margin-top: 2px;
+  /* Espaçamento superior */
+}
+
+.separadorTitulo {
+  border-top: 2px solid #000000;
+  margin: 5px 0;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.separadorTexto {
+  border-top: 0.1px solid #000000;
+  margin: 7px 0;
+  margin-left: 4px;
+  margin-right: 1000px;
+}
+
+
+.texto-estilizado {
+  color: #000000;
+  /* Cor do texto */
+  font-size: 14x;
+  /* Tamanho da fonte */
+  font-weight: bold;
+  /* Negrito */
+  text-decoration: none;
+  /* Sublinhado */
+  text-transform: uppercase;
+  /* Texto em letras maiúsculas */
+  text-shadow: 2x 2px 2px rgba(133, 133, 133, 0.5);
+  /* Sombra do texto */
+  letter-spacing: 1px;
+  /* Espaçamento entre letras */
+  line-height: 1.5;
+  /* Altura da linha */
+  text-align: center;
+  /* Alinhamento do texto */
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(6, 2fr);
+  /* Três colunas com larguras iguais */
+  gap: 20px;
+  /* Espaçamento entre as colunas */
+  margin-left: 0px;
+}
+
+
+.item {
+  /* Estilos para os itens do conteúdo */
+  background-color: #ffffff;
+  /* Cor de fundo dos itens */
+  padding: 5px;
+  /* Espaçamento interno dos itens */
+  text-align: center;
+}
+
+/* Estilização da lupa */
+.lupa {
+  position: absolute;
+  display: none;
+  width: 200px; /* Largura da área de visualização */
+  height: 200px; /* Altura da área de visualização */
+  border: 1px solid #ccc; /* Borda para estilização */
+  pointer-events: none; /* Impede que a lupa capture eventos de mouse */
+}
+
+/* Estilização do cursor para indicar interação */
+.carousel-inner {
+  cursor: zoom-in;
+}
+
+.bordaEf {
+  width: 800px;
+  height: auto;
+  display: block;
+  padding: 25px;
+  margin: 0 auto; /* Adiciona margem automática nos lados esquerdo e direito para centralizar horizontalmente */
+}
+
+.centro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto
+}
+
+.balao {
+  display: none;
+  background-color: #f1f1f191;
+  padding: 10px;
+  border-radius: 12px;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  height: 80px;
+  text-align: center;
+
+  /* Posicionamento */
+  position: absolute;
+  top: 320px; /* Ajuste esta margem superior conforme necessário */
+  left: 66%; /* Centralizar horizontalmente na div */
+  transform: translateX(-15%); /* Centralizar horizontalmente na div */
+
+  /* Alinhar no topo */
+  align-items: flex-start;  
+}
+
+.mensagem {
+  margin: 0;
+}
+
+.selecionado {
+  font-style: normal green;
+}
+

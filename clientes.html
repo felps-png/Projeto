@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="estilo.css">
+  <title>Clientes</title>
+</head>
+
+<body>
+
+  <header>
+    <div id="header-placeholder"></div>
+  </header>
+  <div class="menu">
+    <main>
+      <!-- Aqui você pode adicionar o conteúdo principal da página -->
+      <div style="margin: 10px; text-align: left;">
+        <h1 style="font-family: Arial;  font-weight: bold; color: #d92830 ;">Padrões de Clientes</h1>
+        <h4>Para encontrar o seu cliente basta digitar o nome ou o código do mesmo.</h4>
+      </div>
+
+      <div class="input-group mb-3">
+        <div style="width: 600px; height: 50px; display: inline-flex; padding-right: 20px;">
+          <label for="codigoInput" class="form-label">Cliente:</label>
+          <input type="text" class="form-control" id="txtPesquisar-Nome-Cliente"
+            placeholder="Digite o nome ou o código do seu cliente..."
+            onkeydown="if(event.keyCode==13) pesquisarNomeCliente()">
+          <button class="btn btn-danger" type="button" onclick="pesquisarNomeCliente()">Pesquisar</button>
+          <button type="button" class="btn btn-outline-secondary" onclick="limparDados()">Limpar</button>
+        </div>
+      </div>
+      <div id="container-resultados"
+        style="text-align: center; border-style: solid; border-color: rgba(240, 248, 255, 0.205); border-width: 1px; padding: 10px; margin-bottom: 18px; background-color: rgb(212, 212, 212);">
+      
+        <div id='dadosCliente' style="text-align: left; font-style: normal 18pt arial;">
+        </div>
+        <table id="tabela-resultados" class="table table-bordered border-danger" style="width: 80%;">
+          <thead>
+            <tr id="cabecalho-tabela">
+              <th>PARAFUSO</th>
+              <th>VISOR</th>
+              <th>MEDIDAS</th>
+              <th>LOGOTIPO</th>
+              <th>PRODUTO</th>
+            </tr>
+          </thead>
+          <tbody id="corpo-tabela">
+            <!-- Os resultados serão preenchidos dinamicamente aqui -->
+          </tbody>
+        </table>
+        <textarea placeholder=" Informações Adicionais" style="width: 80%; height: 150px; display: flex; margin: 4px;"
+          class="table table-bordered border-danger" id="observacoes" rows="4" cols="50" readonly></textarea>
+      </div>
+
+
+
+    </main>
+  </div>
+  <div style="margin: 18px">
+    <div class="d-grid gap-2"
+      style="background-color:#d92830; border-radius: 7px; justify-content: center; padding: 5px;">
+      <button class="btn btn-outline-light" type="button" style="margin: 5px;" onclick="voltarInicio()">Voltar ao
+        Inicio</button>
+    </div>
+
+
+    <footer>
+      <!-- Aqui você pode adicionar informações de rodapé, links de redes sociais, etc. -->
+      <p>&copy; 2023 Elevcom by Felipe Pereira. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"></script>
+      
+</body>
+
+</html>
